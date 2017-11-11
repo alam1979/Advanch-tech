@@ -1,0 +1,14 @@
+AppURL=https://www.ups.com/us/en/Home.page
+ 
+ 
+ UserName=Sarower2017
+ Password=Ttech123$
+ 
+ 
+ Chromepath=./Driver/chromedriver.exe
+
+
+ IEpath=./Driver/IEDriverServer.exe
+ 
+ ExcelPath=./ApplTestData/Table1.xls
+ 

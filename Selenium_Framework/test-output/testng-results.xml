@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="84589" started-at="2017-11-11T06:53:43Z" finished-at="2017-11-11T06:55:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="84589" started-at="2017-11-11T06:53:43Z" finished-at="2017-11-11T06:55:07Z">
+      <class name="com.usa.sql.practice.code.DataBaseConn">
+        <test-method status="PASS" signature="DBConnection()[pri:0, instance:com.usa.sql.practice.code.DataBaseConn@1d16f93d]" name="DBConnection" is-config="true" duration-ms="480" started-at="2017-11-11T01:53:43Z" finished-at="2017-11-11T01:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DBConnection -->
+        <test-method status="PASS" signature="tc_1()[pri:0, instance:com.usa.sql.practice.code.DataBaseConn@1d16f93d]" name="tc_1" duration-ms="83474" started-at="2017-11-11T01:53:43Z" finished-at="2017-11-11T01:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_1 -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.usa.sql.practice.code.DataBaseConn@1d16f93d]" name="tear" is-config="true" duration-ms="611" started-at="2017-11-11T01:55:07Z" finished-at="2017-11-11T01:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.usa.sql.practice.code.DataBaseConn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

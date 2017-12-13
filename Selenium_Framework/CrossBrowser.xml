@@ -5,7 +5,7 @@
    
    <parameter name="browser" value= "firefox" />
      <parameter name="browser" value= "chrome" />
-      <!--  parameter name="browser" value= "ie" /-->
+      <parameter name="browser" value= "ie" />
   <classes>
  
   <class name="com.usa.student.testng.CrossBrowserTest"/>

@@ -29,5 +29,4 @@ public class browserFactory {
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		
 		return driver;
-	}
-}
+	}}

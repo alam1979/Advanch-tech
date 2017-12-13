@@ -1,4 +1,4 @@
-package com.usa.ttech.student.stepdefination;
+ package com.usa.ttech.student.stepdefination;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +19,7 @@ public class Login_function {
 	JavascriptExecutor js;
 
 	@Given("^User is on facebook login Page$")
-	public void user_is_on_facebook_login_Page() throws Throwable {
+	public void user_is_on_facebook_login_Page() {// throws Throwable {
 		driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
@@ -35,7 +35,7 @@ public class Login_function {
 	}
 
 	@When("^User click to Login button$")
-	public void user_click_to_Login_button() throws Throwable {
+	public void user_click_to_Login_button()  {
 
 		driver.navigate().to("https://www.facebook.com/login/");
 		driver.manage().window().maximize();
@@ -51,21 +51,17 @@ public class Login_function {
 		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys(userName);
 
 	}
-
-	@When("^User enter valid pass from \"([^\"]*)\" table$")
+    @When("^User enter valid pass from \"([^\"]*)\" table$")
 	public void user_enter_valid_pass_from_table(String pass) throws Throwable {
 		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys(pass);
 		driver.findElement(By.xpath(".//*[@id='loginbutton']")).click();
 
 	}
-
-	@Then("^Validate Login is Successfull$")
+    @Then("^Validate Login is Successfull$")
 	public void validate_Login_is_Successfull() throws Throwable {
 		driver.getTitle();
-	//	Assert.assertEquals(driver.getTitle(), driver.getTitle());
+		//Assert.assertEquals(driver.getTitle(), driver.getTitle());
 		System.out.println("Test Passed Successfully");
 		driver.quit();
 
-	}
-
-}
+	}}

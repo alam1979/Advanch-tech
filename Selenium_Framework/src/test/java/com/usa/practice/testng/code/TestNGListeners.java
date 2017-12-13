@@ -11,24 +11,19 @@ import org.testng.annotations.Test;
 public class TestNGListeners {
 
 	WebDriver driver;					
-
-	// Test to pass as to verify listeners .		
+    // Test to pass as to verify listeners .		
 	@Test		
 	public void Login()				
-	{		driver= new FirefoxDriver();
+	{	driver= new FirefoxDriver();
 	    driver.get("http://www.facebook.com/");					
 	    driver.findElement(By.id("email")).sendKeys("Ttech");							
 	    driver.findElement(By.id("pass")).sendKeys("1213wwdeasd");							
 	    //driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();	
 	    driver.quit();
 	}	
-	
 	// Forcefully failed this test as to verify listener.		
 	@Test		
 	public void TestToFail()				
 	{						
 	    Assert.assertEquals("sarower", "sarower");		
-	}	
-	
-	
-}
+	}}

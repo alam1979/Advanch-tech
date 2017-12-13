@@ -95,7 +95,4 @@ public class stepdef {
 		assertEquals(pagefactory.getHomePageTitleText(),driver.getTitle());
 		
 		driver.quit();
-	}
-
-	
-}
+	}}

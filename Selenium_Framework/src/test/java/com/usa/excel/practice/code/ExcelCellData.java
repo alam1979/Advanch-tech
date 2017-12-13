@@ -11,6 +11,5 @@ public class ExcelCellData {
 
 		exceldataTableCell=ExcelFactory.getCellData(0, 1, 1, path);
 		System.out.println(exceldataTableCell);
-	}
-
-}
+		
+	}}

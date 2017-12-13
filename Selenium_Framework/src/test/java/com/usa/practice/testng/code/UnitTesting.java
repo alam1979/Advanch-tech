@@ -51,9 +51,10 @@ public class UnitTesting {
 	@AfterSuite
 	public void closeSuite() {
 		System.out.println("This is AfterSuite");
+		
 	}
 	@Test
 	public void getsalary() {
 		System.out.println("This is Test");
-	}
-}
+		
+	}}

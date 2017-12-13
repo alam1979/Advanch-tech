@@ -20,9 +20,6 @@ public class HomePageFactory {
 		AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 200);
 		PageFactory.initElements( driver,factory);
 	}
-	
-	
-	
 	@FindBy(how = How.XPATH, using = ".//*[@id='ups-navItems']/ul/li[1]/a")
 	@CacheLookup
 	private WebElement homePageloginBtn;
@@ -53,10 +50,7 @@ public class HomePageFactory {
 	}
 	public WebElement getLoginbtn() {
 		return loginbtn;
-	}
-	
-	
-}
+	}}
 	
 	
 	

@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.usa.sql.practice.code.DataBaseConn">
+      <class name="com.usa.practice.testng.code.CrossBrowserTest">
         <methods>
-          <include name="DBConnection"/>
-          <include name="tc_1"/>
-          <include name="tear"/>
+          <include name="getbrowser"/>
         </methods>
-      </class> <!-- com.usa.sql.practice.code.DataBaseConn -->
+      </class> <!-- com.usa.practice.testng.code.CrossBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

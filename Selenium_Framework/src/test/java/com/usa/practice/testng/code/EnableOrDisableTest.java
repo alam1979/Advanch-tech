@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class EnableOrDisableTest {
 
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void firstTest() {
 		System.out.println("This is First Test");
 	}

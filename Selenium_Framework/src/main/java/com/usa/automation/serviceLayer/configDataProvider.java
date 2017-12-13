@@ -7,7 +7,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 
 
-public class configDataProvider {
+    public class configDataProvider {
 	
 	FileInputStream fis;
 	Properties pro;
@@ -25,10 +25,9 @@ public class configDataProvider {
 			
 		} catch (Exception e) {
 			System.out.println("Exception is"+e.getMessage());
-		}		
-	}
+		}}
 	
-public String getAppURL(){
+         public String getAppURL(){
 		
 		String AppURL=pro.getProperty("AppURL");
 		return AppURL;	
@@ -92,8 +91,4 @@ public String getExcelPath(){
 	
 	String ExcelPath=pro.getProperty("ExcelPath");
 	return ExcelPath;	
-}
-
-
-
-}
+}}

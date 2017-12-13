@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.AfterTest;
+//import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -30,10 +30,9 @@ public class CrossBrowserTest {
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			System.out.println("Firefox Titile::"+ driver.getTitle());
 			driver.quit();
+		    }
 		
-			}
-		
-			if(b.equalsIgnoreCase("Chrome")){
+		if(b.equalsIgnoreCase("Chrome")){
 				System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 				driver = new ChromeDriver();
 				
@@ -43,11 +42,8 @@ public class CrossBrowserTest {
 				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				System.out.println("Chrome Titile::"+ driver.getTitle());
 				driver.quit();
-			
-
-				}
-			
-			/*if (c.equalsIgnoreCase("IE"))
+			}
+			if (c.equalsIgnoreCase("IE"))
 			{
 			System.setProperty("webdriver.ie.driver", "./Driver/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
@@ -59,9 +55,5 @@ public class CrossBrowserTest {
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			driver.close();
 			driver.quit();
-			}*/
-
-	}
-		
-	}
+			}}}
 

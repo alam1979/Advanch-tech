@@ -7,8 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(ListenerTest.class)
-public class TestNGListeners {
+ @Listeners(ListenerTest.class)
+ public class TestNGListeners {
 
 	WebDriver driver;					
     // Test to pass as to verify listeners .		

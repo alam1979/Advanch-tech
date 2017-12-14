@@ -3,7 +3,7 @@ package com.usa.practice.testng.code;
 
 import org.testng.AssertJUnit;
 //import org.junit.Assert;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
 public class DependsOnAnotherMethods {

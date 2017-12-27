@@ -18,7 +18,6 @@ public class FindBrokenLink {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        
         String homePage = "http://www.zlti.com";
         String url = "";
         HttpURLConnection huc = null;
@@ -34,7 +33,7 @@ public class FindBrokenLink {
         
         Iterator<WebElement> it = links.iterator();
         
-       while(it.hasNext()){
+        while(it.hasNext()){
             
             url = it.next().getAttribute("href");
             
@@ -66,16 +65,11 @@ System.out.println("URL is either not configured for anchor tag or it is empty")
                     System.out.println(url+" is a valid link");
                 }
                     
-            } catch (MalformedURLException e) {
+                } catch (MalformedURLException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-            } catch (IOException e) {
+                } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-            }
-        }
-        
-        driver.quit();
-
-    }
-}
+                }}
+                driver.quit();  }}

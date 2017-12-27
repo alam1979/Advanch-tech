@@ -10,9 +10,4 @@ public class dataProviderfactory {
 	public static configDataProvider getConfig(){
 		configDataProvider config=new configDataProvider();
 		return config;
-	}
-
-
-
-	
-}
+	}}

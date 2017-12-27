@@ -1,11 +1,9 @@
-/*package com.usa.cucumber.runner;
-
-
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
+package com.usa.cucumber.runner;
 
 
 
+
+/*
 @RunWith(ExtendedCucumber.class)
 @ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
         retryCount = 3,
@@ -26,5 +24,4 @@ import cucumber.api.CucumberOptions;
         glue = { "com/github/mkolisnyk/cucumber/steps" },
         tags = {"@consistent"})
 public class SampleCucumberTest {
-}
-*/
+}*/

@@ -18,7 +18,7 @@ public class DatabaseWholeTableWithJava {
 		Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		
 			ResultSet rs = stmt.executeQuery(
-		 "Select * From employees");
+		    "Select * From employees");
 			ResultSetMetaData rsmd = rs.getMetaData();
 		
 			int columnsNumber = rsmd.getColumnCount();                     
@@ -29,17 +29,11 @@ public class DatabaseWholeTableWithJava {
 			//Print one row          
 			for(int i = 1 ; i <= columnsNumber; i++){
 
-			      System.out.print(rs.getString(i) + " "); //Print one element of a row
-			      columnValue.add(rs.getString(i) );
-			}
+			System.out.print(rs.getString(i) + " "); //Print one element of a row
+			columnValue.add(rs.getString(i) );}
 
 			  System.out.println();//Move to the next line to print the next row.           
-
-			    }
-		// step5 close the connection object
-		connection.close();
-		
-	}
-
-}
+              }
+		      // step5 close the connection object
+		      connection.close();}}
 

@@ -10,17 +10,9 @@ static WebDriver driver;
 		
 		 driver= new FirefoxDriver();
 		  driver.get("https://www.UPS.com/");
+		  
 		 if(driver.getTitle().equalsIgnoreCase("UPS home page")) {
-			   System.out.println("Test Passed");
-		   }
-		   else {
-			   System.out.println("Test Failed");
-		   }
-		   
+		 System.out.println("Test Passed"); }
+		 else { System.out.println("Test Failed");}
 		 Assert.assertEquals( driver.getTitle(), "UPS home page");
-		   
-		   System.out.println("HELLO JAVA");
-
-	}
-
-}
+		 System.out.println("HELLO JAVA");}}

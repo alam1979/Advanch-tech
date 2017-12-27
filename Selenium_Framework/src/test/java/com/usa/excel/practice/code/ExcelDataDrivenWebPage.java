@@ -39,8 +39,8 @@ public class ExcelDataDrivenWebPage {
 	       CellPh.sendKeys(Telephone);
 	      
 	  	screenShot.captureScreenShot(driver, "USPShomepage");
-	  	 WebElement submitbtn = driver.findElement(By.xpath(".//*[@id='form1']/fieldset/div[9]/input")); 
-	  	  submitbtn.click();
-	  	  driver.quit();
+	  	WebElement submitbtn = driver.findElement(By.xpath(".//*[@id='form1']/fieldset/div[9]/input")); 
+	  	submitbtn.click();
+	  	driver.quit();
 	}
 }

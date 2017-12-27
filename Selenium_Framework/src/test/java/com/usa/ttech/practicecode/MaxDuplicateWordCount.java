@@ -1,8 +1,8 @@
 package com.usa.ttech.practicecode;
 
-import java.io.IOException;
 
-public class MaxDuplicateWordCount {
+    public class MaxDuplicateWordCount {
+    	
     public static void main(String[] args)  {
     	// Create an array with room for 100 integers
     	int[] nums = new int[100];

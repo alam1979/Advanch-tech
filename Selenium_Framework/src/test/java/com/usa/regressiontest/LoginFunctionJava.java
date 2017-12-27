@@ -17,14 +17,10 @@ import com.usa.selenium.factory.HomePageFactory;
 public class LoginFunctionJava extends HomePageFactory {
 
 	//static WebDriver driver;
-	
-	public LoginFunctionJava(WebDriver driver)  {
+  public LoginFunctionJava(WebDriver driver)  {
 		super(driver);
-		
-		
 	}
-
-	public static void main(String[] args) throws Throwable {
+   public static void main(String[] args) throws Throwable {
 	
 		driver = browserFactory.getBrowser("firefox",driver);
 		driver.get(dataProviderfactory.getConfig().getAppURL());
@@ -64,6 +60,4 @@ public class LoginFunctionJava extends HomePageFactory {
 		Assert.assertEquals( pagefactory.getHomePageTitleText(),driver.getTitle());
 		
 		driver.quit();
-	}
-
-}
+	}}

@@ -7,17 +7,6 @@ public class PracticeString {
 	public static void main(String[] args) {
 	
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
 		/*System.out.println(name.toLowerCase());
 		System.out.println(name.toUpperCase());
 	
@@ -27,11 +16,7 @@ public class PracticeString {
 		System.out.println(name.charAt(4));*/
 		//System.out.println(name.compareTo("ahmmed"));
 		//System.out.println(name.compareTo(""));
-		
-		
 		//System.out.println(name.concat(" ahmmed"));
-		
-		
 		//System.out.println(name.equals("Ahmmed"));
 	
 	
@@ -55,10 +40,10 @@ public class PracticeString {
 		
 		
 	/*	if(s1.isEmpty()) {
-			System.out.println("HELLO");
+		System.out.println("HELLO");
 		}
 		else {
-			System.out.println("HAVE A NICE DAY");
+		System.out.println("HAVE A NICE DAY");
 		}
 		*/
 		
@@ -74,8 +59,6 @@ public class PracticeString {
 		System.out.println(sf3); 
 	
 		  
-		
-		
 		String js=String.join("-","welcome","to","javatpoint");  
 		System.out.println(js);
 		
@@ -84,7 +67,6 @@ public class PracticeString {
 		System.out.println(index1);//6
 		
 		String s21="sarower";  
-		 
 		System.out.println("string length is: "+s21.length());//10 is the length of javatpoint string  
 		
 		
@@ -97,7 +79,6 @@ public class PracticeString {
 		String a="My name is Khan. My name is Bob. My name is Sonoo.";  
 		String replaceString11=a.replaceAll("\\s","");
 		System.out.println(replaceString11);
-		
 		
 		// trim leading and tailing space	
 		String d1="  hello string   ";  
@@ -112,9 +93,4 @@ public class PracticeString {
 		int i=Integer.parseInt(sdf);//NumberFormatException��
 		System.out.println(i);
 
-		*/
-		
-	
-	}
-
-}
+		*/    }}

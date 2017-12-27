@@ -66,13 +66,7 @@ public class myFirstGrid {
 			System.out.println(value);
 			// Putting a check on each option that if any of the option is equal to 'Africa"
 			// then select it
-			
-			 * if(sValue.equals("Africa")){ select.selectByIndex(i); break; }
-			 
-		}
-		// Kill the browser
-		driver.quit();
-	}
-
-}
-*/
+			 if(sValue.equals("Africa")){ select.selectByIndex(i); break; }}
+		     // Kill the browser
+		     driver.quit();
+	         }}*/

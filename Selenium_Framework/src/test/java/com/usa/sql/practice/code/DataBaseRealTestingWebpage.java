@@ -28,35 +28,26 @@ public class DataBaseRealTestingWebpage {
  String DB_password = "root";
  String Query;
  ResultSet res;
- 
  @BeforeTest
- public void DBConnection() throws Exception
- {
-  try{
+ public void DBConnection() throws Exception {
+ try{
 	  Class.forName("oracle.jdbc.driver.OracleDriver");
-
-		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "hr");
-		 stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-	
-  }catch(Exception e){
-	  System.out.println(e.getMessage());}
- }
- 
- @Test
- public void tc_1() throws Exception
- {
-  try{
-  Query = "Select * from employees";
-  res = stmt.executeQuery(Query);
-  
-  driver = new FirefoxDriver();
-     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-     driver.manage().window().maximize();
-     driver.get("http://www.qavalidation.com/demo");
-     
-     int i=1; //to name the screenshot file
-     while(res.next()) //move to the next row in result set, row by row
-     {
+      Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "hr", "hr");
+	  stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+	  }catch(Exception e){
+	  System.out.println(e.getMessage());}  }
+      @Test
+      public void tc_1() throws Exception  {
+      try{
+      Query = "Select * from employees";
+      res = stmt.executeQuery(Query);
+      driver = new FirefoxDriver();
+      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+      driver.manage().window().maximize();
+      driver.get("http://www.qavalidation.com/demo");
+      int i=1; //to name the screenshot file
+      while(res.next()) //move to the next row in result set, row by row
+      {
       String FirstName = res.getString("FIRST_NAME");
       System.out.println(FirstName);
       String Email = res.getString("EMAIL");

@@ -1,5 +1,5 @@
-package com.util.helper;
-/*package com.usa.helper;
+/*package com.util.helper;
+//package com.usa.helper;
 
 import java.util.Scanner;
 import org.openqa.selenium.WebDriver;
@@ -132,5 +132,4 @@ if(!ScenarioExists){
 
 }	
 }
-
 */

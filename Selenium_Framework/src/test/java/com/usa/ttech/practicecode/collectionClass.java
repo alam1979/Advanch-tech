@@ -18,7 +18,7 @@ public class collectionClass {
 	}	
 */
 	Iterator z = a.iterator();
-
+    
 
 	
 		

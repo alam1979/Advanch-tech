@@ -10,9 +10,7 @@ public class ExcelReadrer {
 		
 		String path="./ApplTestData/DataExtract.xlsx";
 
-		exceldataTable=new ArrayList<String> ();
+		exceldataTable= new ArrayList<String> ();
 		exceldataTable=ExcelFactory.wholeExcelValue(0, path);
 		System.out.println(exceldataTable);
-	}
-
-}
+	    }}

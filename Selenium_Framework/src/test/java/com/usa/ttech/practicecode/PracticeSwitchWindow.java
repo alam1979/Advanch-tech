@@ -16,6 +16,7 @@ public class PracticeSwitchWindow {
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     // Launch the URL
     driver.get("http://toolsqa.wpengine.com/automation-practice-switch-windows/");
+    driver.manage().window().maximize();
     // Store and Print the name of the First window on the console
     String handle= driver.getWindowHandle();
     System.out.println(handle);

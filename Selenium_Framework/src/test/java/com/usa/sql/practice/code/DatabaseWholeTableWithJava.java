@@ -14,7 +14,7 @@ public class DatabaseWholeTableWithJava {
 	public static void main(String[] args) throws Exception {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 
-		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "hr");
+		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "hr", "hr");
 		Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		
 			ResultSet rs = stmt.executeQuery(

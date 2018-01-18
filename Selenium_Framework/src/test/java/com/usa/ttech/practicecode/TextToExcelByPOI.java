@@ -18,7 +18,8 @@ public class TextToExcelByPOI {
 		    public static void main(String args[]) throws IOException {
 		        ArrayList<ArrayList<String>> allRowAndColData = null;
 		        ArrayList<String> oneRowData = null;
-		        String fName = "C:\\Users\\sarow\\Desktop\\TTech Teaching\\text file.txt";
+		      String fName = "C:\\Users\\sarow\\Desktop\\TTech Teaching\\text file.txt";
+		 
 		        String currentLine;
 		        FileInputStream fis = new FileInputStream(fName);
 		        DataInputStream myInput = new DataInputStream(fis);

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.usa.ttech.practicecode.UnitTesting">
+        <methods>
+          <include name="setupClass"/>
+          <include name="setupMethod"/>
+          <include name="setupSuite"/>
+          <include name="closeMethod"/>
+          <include name="closeClass"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.usa.ttech.practicecode.UnitTesting -->
+      <class name="com.usa.regressiontest.LoginFunctionTestNGFramework">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.usa.regressiontest.LoginFunctionTestNGFramework -->
+      <class name="com.usa.practice.testng.code.UnitTesting">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="setupMethod"/>
+          <include name="setupClass"/>
+          <include name="setup"/>
+          <include name="closeMethod"/>
+          <include name="closeClass"/>
+        </methods>
+      </class> <!-- com.usa.practice.testng.code.UnitTesting -->
+      <class name="com.usa.sql.practice.code.DataBaseRealTestingWebpage">
+        <methods>
+          <include name="tear"/>
+          <include name="tc_1"/>
+          <include name="DBConnection"/>
+        </methods>
+      </class> <!-- com.usa.sql.practice.code.DataBaseRealTestingWebpage -->
+      <class name="com.usa.practice.testng.code.ParameterByMethodInDataprovider">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.usa.practice.testng.code.ParameterByMethodInDataprovider -->
+      <class name="com.usa.practice.testng.code.DependsOnAnotherMethods">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="method2"/>
+        </methods>
+      </class> <!-- com.usa.practice.testng.code.DependsOnAnotherMethods -->
+      <class name="com.usa.practice.testng.code.LoginFunction">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.usa.practice.testng.code.LoginFunction -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

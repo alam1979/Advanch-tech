@@ -8,64 +8,47 @@ import org.openqa.selenium.WebDriver;
 
 
     public class configDataProvider {
-	
 	FileInputStream fis;
 	Properties pro;
 	WebDriver driver;
 	public configDataProvider(){
-		
-		
-			//File class to locate excel
+		    //File class to locate excel
 			File src =new File("./Configuration/config. properties");
-		try {
+		    try {
 			//input stream to read data
 			fis = new FileInputStream(src);
 			pro= new Properties();
 			pro.load(fis);
-			
-		} catch (Exception e) {
-			System.out.println("Exception is"+e.getMessage());
+			} catch (Exception e) {
+		System.out.println("Exception is"+e.getMessage());
 		}}
-	
-         public String getAppURL(){
-		
+	    public String getAppURL(){
 		String AppURL=pro.getProperty("AppURL");
 		return AppURL;	
-	}
-
-public String userName(){
-	
-	String UserName=pro.getProperty("UserName");
-	return UserName;	
-}
-public String passWord(){
-	
-	String Password=pro.getProperty("Password");
-	return Password;	
-}
-
-public String TestWebTableURL(){
-	
-	String testWebTableURL=pro.getProperty("TestWebTableURL");
-	
-	return testWebTableURL;	
-}
-
-public String getIEPath(){
-		
+	    }
+        public String userName(){
+	    String UserName=pro.getProperty("UserName");
+	    return UserName;	
+        } 
+        public String passWord(){
+        String Password=pro.getProperty("Password");
+	    return Password;	
+        }
+        public String TestWebTableURL(){
+	    String testWebTableURL=pro.getProperty("TestWebTableURL");
+	    return testWebTableURL;	
+        }
+        public String getIEPath(){
 		String IEPath=pro.getProperty("IEPath");
-		return IEPath;	
-	}
-public String getChromePath(){
-	
-	String ChromePath=pro.getProperty("ChromePath");
-	return ChromePath;	
-}
-public String getdbURL(){
-	
-	String dbURL=pro.getProperty("dbURL");
-	return dbURL;	
-}	
+		return IEPath;	}
+        public String getChromePath(){
+	    String ChromePath=pro.getProperty("ChromePath");
+	    return ChromePath;	
+        }
+        public String getdbURL(){
+	    String dbURL=pro.getProperty("dbURL");
+	    return dbURL;	
+        }	
 	
 public String getdbuname(){
 	

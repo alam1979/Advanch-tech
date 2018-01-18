@@ -1,6 +1,6 @@
-/*package com.usa.ttech.practicecode;
+package com.usa.ttech.practicecode;
 
-import java.io.File;
+//import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -10,9 +10,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
+//import org.openqa.selenium.firefox.FirefoxBinary;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -66,7 +66,7 @@ public class myFirstGrid {
 			System.out.println(value);
 			// Putting a check on each option that if any of the option is equal to 'Africa"
 			// then select it
-			 if(sValue.equals("Africa")){ select.selectByIndex(i); break; }}
+			 if(value.equals("Africa")){ select.selectByIndex(i); break; }}
 		     // Kill the browser
 		     driver.quit();
-	         }}*/
+	         }}

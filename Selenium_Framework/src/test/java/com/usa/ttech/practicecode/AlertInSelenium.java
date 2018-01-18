@@ -17,19 +17,23 @@ public class AlertInSelenium {
 	
 	
 	public static void main(String[] args) throws InterruptedException {
-		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox-sdk\\bin\\firefox.exe");
+	/*	File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox-sdk\\bin\\firefox.exe");
 		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
 		FirefoxProfile firefoxProfile = new FirefoxProfile();
 
 		WebDriver driver = new FirefoxDriver(ffBinary, firefoxProfile);
-
+*/
+		WebDriver driver = new FirefoxDriver();
 		driver.get("http://demo.guru99.com/selenium/delete_customer.php");
-	TimeUnit.SECONDS.sleep(5);
+	    TimeUnit.SECONDS.sleep(5);
 		driver.findElement(By.xpath("html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("123456");
 		TimeUnit.SECONDS.sleep(5);
 		driver.findElement(By.xpath("html/body/form/table/tbody/tr[3]/td[2]/input[1]")).click();
 		TimeUnit.SECONDS.sleep(5);
-		Alert alert=driver.switchTo().alert();
+		
+		
+		Alert alert = driver.switchTo().alert();
+		
 		TimeUnit.SECONDS.sleep(2);
 		System.out.println(alert.getText());
 		TimeUnit.SECONDS.sleep(2);

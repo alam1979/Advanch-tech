@@ -12,7 +12,7 @@
 	        public static ResultSet getDatabaseColumnArrayList(String SQLqyery,ResultSet rs ) throws Exception {
 		    Class.forName("oracle.jdbc.driver.OracleDriver");
 
-		    Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522/orcl", "hr", "hr");
+		    Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/orcl", "hr", "hr");
 		    Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		
 			rs = stmt.executeQuery(SQLqyery);

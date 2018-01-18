@@ -18,10 +18,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelFactory {
 	//static String excelPath="./DataExtract.xlsx";
-	static XSSFWorkbook workbook;
+	 static XSSFWorkbook workbook;
 
 	
-public static String getCellData (int sheetIndex,int row,int column,String path){
+    public static String getCellData (int sheetIndex,int row,int column,String path){
 	File src = new File(path);
 	try {
 		FileInputStream fis =new FileInputStream(src);

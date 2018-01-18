@@ -41,6 +41,4 @@ public class ExcelDataDrivenWebPage {
 	  	screenShot.captureScreenShot(driver, "USPShomepage");
 	  	WebElement submitbtn = driver.findElement(By.xpath(".//*[@id='form1']/fieldset/div[9]/input")); 
 	  	submitbtn.click();
-	  	driver.quit();
-	}
-}
+	  	driver.quit();}}

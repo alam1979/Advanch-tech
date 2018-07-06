@@ -7,6 +7,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -22,8 +23,14 @@ public class AlertInSelenium {
 		FirefoxProfile firefoxProfile = new FirefoxProfile();
 
 		WebDriver driver = new FirefoxDriver(ffBinary, firefoxProfile);
+		
+		
+		
 */
-		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/selenium/delete_customer.php");
 	    TimeUnit.SECONDS.sleep(5);
 		driver.findElement(By.xpath("html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("123456");

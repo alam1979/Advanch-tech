@@ -18,7 +18,7 @@ public class JunitAnnotationsExample {
 
     @BeforeClass		
     public static void m1() {							
-        System.out.println("Using @BeforeClass , executed before all test cases ");					
+    System.out.println("Using @BeforeClass , executed before all test cases ");					
     }		
 
     @Before		

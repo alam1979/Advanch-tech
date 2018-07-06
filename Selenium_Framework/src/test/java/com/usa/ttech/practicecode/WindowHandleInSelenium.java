@@ -15,6 +15,7 @@ public class WindowHandleInSelenium {
 
 	public static void main(String[] args) throws InterruptedException {
 	WebDriver driver = new FirefoxDriver();
+	
         //Launching the site.				
        driver.get("http://demo.guru99.com/popup.php");			
         driver.manage().window().maximize();		

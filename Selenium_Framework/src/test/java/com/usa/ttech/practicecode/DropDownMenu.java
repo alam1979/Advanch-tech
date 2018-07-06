@@ -32,7 +32,7 @@ public class DropDownMenu {
  
 		// Launch the URL
 		driver.get("http://toolsqa.wpengine.com/automation-practice-form");
-
+         
 		// Step 3: Select 'Continents' Drop down ( Use Id to identify the element )
 		// Find Select element of "Single selection" using ID locator.
 		Select select = new Select(driver.findElement(By.id("continents")));
@@ -62,13 +62,9 @@ public class DropDownMenu {
 			System.out.println(value);
 			// Putting a check on each option that if any of the option is equal to 'Africa" then select it 
 			/*if(sValue.equals("Africa")){
-				select.selectByIndex(i);
-				break;
+			select.selectByIndex(i);
+			break;
 				}*/
 			}	    
-		// Kill the browser
-		driver.quit();
-		
-	}
-
-}
+		 // Kill the browser
+		 driver.quit();}}

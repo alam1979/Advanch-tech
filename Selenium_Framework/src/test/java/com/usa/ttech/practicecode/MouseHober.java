@@ -21,6 +21,7 @@ public class MouseHober {
 		WebElement element = driver.findElement(By.xpath(".//*[@id='nav-link-accountList']/span[2]"));
 		HighlightEmenet.drawBorder(driver, element);
 		Thread.sleep(2500);
+		
 		Actions action = new Actions(driver);
         action.moveToElement(element).build().perform();
         driver.findElement(By.xpath(".//*[@id='nav-al-wishlist']/a[3]/span")).click();  }}
